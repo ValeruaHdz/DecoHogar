@@ -223,29 +223,73 @@ body {
   background-color: #474133a9;
 }
 
-/* ===== NOSOTROS ===== */
+/* === NUEVO DISEÑO DE NOSOTROS === */
+
 #nosotros {
   padding: 60px 20px;
-  background-color: #82715a;
-  color: #FFF8F0;
+  background: #8b7257;
+  color: white;
   text-align: center;
-  width: 100%;
-  overflow: hidden;
 }
 
 #nosotros h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
   font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 4vw, 2.5rem);
-  margin-bottom: 20px;
 }
 
-#nosotros p {
+.intro-nosotros {
   max-width: 800px;
-  margin: 0 auto;
-  font-size: clamp(1rem, 2vw, 1.1rem);
-  padding: 0 20px;
+  margin: auto;
   line-height: 1.8;
+  font-size: 1.2rem;
 }
+
+/* Tarjetas */
+.nosotros-cards {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card-nosotros {
+  background: #b69a89cc;
+  color: #4a3b31;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform .3s ease, box-shadow .3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-nosotros:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-nosotros h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.card-nosotros ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.card-nosotros ul li {
+  margin: 5px 0;
+}
+
+/* Iconos */
+.icono {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
 
 /* ===== GALERÍA ===== */
 #galeria {
